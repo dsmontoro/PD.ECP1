@@ -3,9 +3,9 @@ package state.connection;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.upm.miw.pd.state.connection.Conexion;
-import es.upm.miw.pd.state.connection.Estado;
-import es.upm.miw.pd.state.connection.Link;
+import state.connection.Conexion;
+import state.connection.Estado;
+import state.connection.Link;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 

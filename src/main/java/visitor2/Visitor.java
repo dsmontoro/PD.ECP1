@@ -1,4 +1,4 @@
-package es.upm.miw.pd.visitor;
+package visitor2;
 
 public abstract class Visitor {
     public abstract void visitElementA(ElementA e);

@@ -5,12 +5,12 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.upm.miw.pd.composite.expression.solution.Dividir;
-import es.upm.miw.pd.composite.expression.solution.Expresion;
-import es.upm.miw.pd.composite.expression.solution.Multiplicar;
-import es.upm.miw.pd.composite.expression.solution.Numero;
-import es.upm.miw.pd.composite.expression.solution.Restar;
-import es.upm.miw.pd.composite.expression.solution.Sumar;
+import composite.expression.Dividir;
+import composite.expression.Expresion;
+import composite.expression.Multiplicar;
+import composite.expression.Numero;
+import composite.expression.Restar;
+import composite.expression.Sumar;
 
 public class ExpressionTest {
     private Expresion exp1, exp2, exp3, exp4, exp5, exp6;
