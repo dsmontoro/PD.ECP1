@@ -32,7 +32,7 @@ public class Conexion {
     }
 
     public void parar() {
-        state.parar()
+        state.parar();
     }
 
     public void iniciar() {
