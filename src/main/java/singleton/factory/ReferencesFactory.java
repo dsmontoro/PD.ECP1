@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ReferencesFactory {
-    private Map<String, Integer> references;
+    
+	private static ReferencesFactory referencesFactory = new ReferencesFactory();
+	
+	private Map<String, Integer> references;
 
     private int reference;
 
@@ -13,6 +16,10 @@ public class ReferencesFactory {
         this.reference = 0;
     }
 
+    public static ReferencesFactory getFactory() {
+    	return referencesFactory;
+    }
+    
     public int getReference(String key) {
         Integer result = this.references.get(key);
         if (result == null) {
