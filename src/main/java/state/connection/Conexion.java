@@ -24,27 +24,28 @@ public class Conexion {
     }
 
     public void abrir() {
-        state.abrir();
+        state.abrir(this);
     }
 
     public void cerrar() {
-        state.cerrar();
+        state.cerrar(this);
     }
 
     public void parar() {
-        state.parar();
+        state.parar(this);
     }
 
     public void iniciar() {
-        state.iniciar();
+        state.iniciar(this);
     }
 
     public void enviar(String msg) {
-        state.enviar(msg);
+        link.enviar(msg);
+        state.enviar(msg,this);
     }
 
     public void recibir(int respuesta) {
-        state.recibir(respuesta);
+        state.recibir(respuesta,this);
     }
 
 }
