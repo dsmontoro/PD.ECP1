@@ -2,7 +2,7 @@ package state.connection;
 
 public class StateCerrado extends State {
 
-	private Estado estado = Estado.CERRADO;
+	private static final Estado estado = Estado.CERRADO;
 	
 	@Override
 	public void abrir(Conexion conexion) {

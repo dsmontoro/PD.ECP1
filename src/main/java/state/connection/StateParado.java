@@ -2,7 +2,7 @@ package state.connection;
 
 public class StateParado extends State {
 
-    private Estado estado = Estado.PARADO;
+    private static final Estado estado = Estado.PARADO;
     
     @Override
     public void abrir(Conexion conexion) {
