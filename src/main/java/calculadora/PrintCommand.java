@@ -5,7 +5,7 @@ import upm.jbb.IO;
 public class PrintCommand extends AbstractCommand {
 
     public PrintCommand(Calculator calculator) {
-        this.calculator = calculator;
+        super(calculator);
     }
     
     @Override
@@ -15,7 +15,7 @@ public class PrintCommand extends AbstractCommand {
 
     @Override
     public void execute() {
-        IO.getIO().println(calculator.getTotal());
+        IO.getIO().println(this.getCalculator().getTotal());
     }
 
 }

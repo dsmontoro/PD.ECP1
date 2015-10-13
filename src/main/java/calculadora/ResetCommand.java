@@ -3,7 +3,7 @@ package calculadora;
 public class ResetCommand extends AbstractCommand {
 
     public ResetCommand(Calculator calculator) {
-        this.calculator = calculator;
+        super(calculator);
     }
     
     @Override
@@ -13,8 +13,7 @@ public class ResetCommand extends AbstractCommand {
 
     @Override
     public void execute() {
-        calculator.reset();
-
+        this.getCalculator().reset();
     }
 
 }

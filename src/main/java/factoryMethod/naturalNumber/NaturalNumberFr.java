@@ -10,8 +10,8 @@ public class NaturalNumberFr extends NaturalNumber {
     
     @Override
     public String getTextValue() {
-        if (this.value < textValue.length) {
-            return NaturalNumberFr.textValue[this.value];
+        if (this.getValue() < textValue.length) {
+            return NaturalNumberFr.textValue[this.getValue()];
         } else {
             return "???";
         }

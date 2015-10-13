@@ -6,13 +6,13 @@ public class Parrafo extends Compuesto {
     public void add(Componente componente) {
         if (componente.esCompuesto())
             throw new UnsupportedOperationException("Acción no permitida... ");
-        componentes.add(componente);
+        this.getComponentes().add(componente);
     }
 
     @Override
     public void remove(Componente componente) {
         if (!componente.esCompuesto())
-            componentes.remove(componente);
+            this.getComponentes().remove(componente);
     }
     
     @Override

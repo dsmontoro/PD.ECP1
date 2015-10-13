@@ -5,7 +5,11 @@ import java.util.List;
 
 public abstract class Compuesto extends Componente {
     
-    protected List<Componente> componentes = new ArrayList<Componente>();
+    private List<Componente> componentes = new ArrayList<Componente>();
+    
+    public List<Componente> getComponentes() {
+    	return componentes;
+    }
         
     @Override
     public boolean esCompuesto() {

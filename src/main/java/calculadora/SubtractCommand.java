@@ -5,7 +5,7 @@ import upm.jbb.IO;
 public class SubtractCommand extends AbstractCommand{
 
     public SubtractCommand(Calculator calculator) {
-        this.calculator = calculator;
+        super(calculator);
     }
     
     @Override
@@ -15,7 +15,7 @@ public class SubtractCommand extends AbstractCommand{
 
     @Override
     public void execute() {
-        calculator.subtract(IO.getIO().readInt());
+        this.getCalculator().subtract(IO.getIO().readInt());
     }
 
 }
