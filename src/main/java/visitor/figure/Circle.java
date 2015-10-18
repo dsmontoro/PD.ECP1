@@ -19,4 +19,9 @@ public class Circle extends Figure {
         return Double.POSITIVE_INFINITY;
     }
 
+    @Override
+    public void accept(Visitor v) {
+        v.visitCircle(this);
+    }
+
 }
